@@ -1,0 +1,725 @@
+<!doctype html>
+<html lang=''>
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto:300,700' rel='stylesheet' type='text/css'>
+	<link rel='stylesheet' href='css/style.css'>
+	<script src="js/jquery-1.11.1.js" type="text/javascript"></script>
+	<script src="js/virus.js"></script>
+	<link href="http://vjs.zencdn.net/4.11/video-js.css" rel="stylesheet">
+	<script src="http://vjs.zencdn.net/4.11/video.js"></script>
+	<script src="js/jquery.custom-scrollbar.js"></script>
+	<link type="text/css" rel="stylesheet" href="css/jquery.custom-scrollbar.css"/>
+
+	<script src='js/three.min.js'></script>
+	<script src='js/SceneLoader.js'></script>
+	<script src='js/loaders/STLLoader.js'></script>
+	<script src='js/loaders/ColladaLoader.js'></script>
+	<script src='js/loaders/OBJLoader.js'></script>
+	<script src='js/loaders/MTLLoader.js'></script>
+	<script src='js/loaders/OBJMTLLoader.js'></script>
+	<script src='js/loaders/BinaryLoader.js'></script>
+	<script src='js/threex.universalloader.js'></script>
+	<script src='js/OrbitControls.js'></script>
+	<script src='js/threex.domevents.js'></script>
+	<script src='js/LoadingManager.js'></script>
+	<script src='js/stats.min.js'></script>
+	<script type="text/javascript" charset="utf-8" src="edge/cHome_edgePreload.js"></script>
+
+	<title>Deep Knowledge Ventures</title>
+</head>
+<body>
+<div id='page-preloader'>
+	<div class="container2">
+	  <span class="dots"></span>
+	  <span class="dots"></span>
+	  <span class="dots"></span>
+	  <span class="dots"></span>
+	  <span class="dots"></span>
+	  <span class="dots"></span>
+	  <span class="dots"></span>
+	  <span class="dots"></span>
+	  <span class="dots"></span>
+	  <span class="dots"></span>
+	</div>
+</div>
+<div class='years animcb'>
+		<a id='y1' class='yr navi pmlm2'>2014</a>
+		<a id='y2' class='yr navi pmlm2'>2015</a>
+</div>
+<div class='pmlm animcb'>
+	<div class='fclm'>
+		<a id='p1' class='an pmlm2'>What we do</a>
+		<a id='p2' class='an pmlm2'>Principles</a>
+		<a id='p3' class='an pmlm2'>Specialization</a>
+		<a id='p4' class='an pmlm2'>Mission</a>
+		<a id='p5' class='an pmlm2'>Goals</a>
+	</div>
+</div>
+		<div class='pm animcb'>
+			<div class='fc'>
+			<a class='pml'>Socials</a>
+			<a class='pml'>Technologies</a>
+			<a class='pml'>Investments</a>
+			<a class='pml'>Information</a>
+			<a class='pml'>Deseases</a>
+			<a class='pml'>Science</a>
+			<a class='pml'>Development</a>
+			<a class='pml'>Space</a>
+			<a class='pml'>Innovations</a>
+			<a class='pml'>Socials</a>
+			<a class='pml'>Technologies</a>
+			<a class='pml'>Investments</a>
+			<a class='pml'>Information</a>
+			<a class='pml'>Deseases</a>
+			<a class='pml'>Science</a>
+			<a class='pml'>Development</a>
+			<a class='pml'>Space</a>
+			<a class='pml'>Innovations</a>
+			<a class='pml'>Socials</a>
+			<a class='pml'>Technologies</a>
+			<a class='pml'>Investments</a>
+			<a class='pml'>Information</a>
+			<a class='pml'>Deseases</a>
+			<a class='pml'>Science</a>
+			<a class='pml'>Development</a>
+			<a class='pml'>Space</a>
+			<a class='pml'>Innovations</a>
+			<a class='pml'>Socials</a>
+			<a class='pml'>Technologies</a>
+			<a class='pml'>Investments</a>
+			<a class='pml'>Information</a>
+			<a class='pml'>Deseases</a>
+			<a class='pml'>Science</a>
+			<a class='pml'>Development</a>
+			<a class='pml'>Space</a>
+			<a class='pml'>Innovations</a>
+			<a class='pml'>Socials</a>
+			<a class='pml'>Technologies</a>
+			<a class='pml'>Investments</a>
+			<a class='pml'>Information</a>
+			<a class='pml'>Deseases</a>
+			<a class='pml'>Science</a>
+			<a class='pml'>Development</a>
+			<a class='pml'>Space</a>
+			<a class='pml'>Innovations</a>
+			</div>
+		</div>
+<div id='wrap'>
+<div class='screen' id='screenHome'></div>
+<div class='screen' id='screenInfo'></div>
+<div class='screen' id='screenNews'></div>
+<div class='screen' id='screenPress'></div>
+<div class='screen' id='screenProjects'></div>
+<div class='screen' id='screenTeam'></div>
+<div class='screen' id='screenContacts'></div>
+<div class='content'>
+<a href='#sent'></a>
+	<a href='#x' class='overlay' id='sent'></a>
+	<div class='popup'>
+		<a class='cls' title='Close' href='#close'></a>
+			<section id='sent'>
+				<div class='cont960'>
+					<div class='ndn'>
+						Your message has been sent succesfully.
+					</div>
+					<a href='#close' class='lnk'>OK</a>
+				</div>
+			</section>
+	</div>
+	<div class='cont' id='opa'></div>
+	<div class='cont' id='cHome'><div id="Stage" class="EDGE-19768280"></div></div>
+	<div class='cont' id='cNews'>
+		<div class='fb'></div>
+		<div class='mcont'>
+				<div class='lr layer1'>
+					<div class='oneMonth'>
+						<div class='oneArticle'>
+							<img src="res/prweb.gif" alt="PRweb" height="50">
+							<a href="http://www.prweb.com/releases/2014/10/prweb12232415.htm" target="_blank">
+							<div class="news_title">Canada Cancer and Aging Research Laboratory Launched</div>
+							</a>
+							<div class="news_date">7 oct, 2014</div>
+							<div class="news_text_wrapper">Today announced the launch of its personalized medicine and research programs in Canada. The company plans to unfold its operations in two phases, working in the areas of a personalized medical approach for cancer treatment.
+							</div>
+						</div>
+					</div>
+					<div class='oneMonth'>
+						<div class='oneArticle'>
+							<img src="res/marketwatch.jpg" alt="MarketWatch Wall Street Journal" height="52">
+							<a href="http://www.marketwatch.com/story/deep-knowledge-ventures-makes-first-investment-in-space-2014-09-10" target="_blank">
+							<div class="news_title">Deep Knowledge Ventures Makes First Investment in Space</div>
+							</a>
+							<div class="news_date">10 sept, 2014</div>
+							<div class="news_text_wrapper">Deep Knowledge Ventures, a Hong Kong-based venture capital fund that utilizes Artificial Intelligence software, announced today its first investment in aerospace. DKV has acquired a stake in Transplanetary.
+							</div>
+						</div>
+					</div>
+					<div class='oneMonth'>
+						<div class='oneArticle'>
+				            <img src="res/reuters.jpg" alt="Reuters" height="50">
+				            <a href="http://www.reuters.com/article/2014/06/04/idUSnGNX7XDF5Y+1dd+GNW20140604" target="_blank">
+				            <div class="news_title">The Former Head of the Human Genome Project Joins InSilico Medicine</div>
+				            </a>
+				            <div class="news_date">4 june, 2014</div>
+				            <div class="news_text_wrapper">InSilico Medicine announced that Charles Cantor, Ph.D. will chair its Scientific Advisory Board.
+							Dr. Cantor, one of the leaders of the Human Genome Project, has published more than 400 peer-reviewed articles.
+				            </div>						
+						</div>
+					</div>
+				</div>
+				<div class='lr layer2'>
+					<div class='oneMonth'>
+						<div class='oneArticle'>
+							<img src="res/prweb.gif" alt="PRweb" height="50">
+							<a href="http://www.prweb.com/releases/2014/05/prweb11885423.htm" target="_blank">
+							<div class="news_title">Leading Computer Scientist Joins InSilico Medicine's War on Aging and Cancer</div>
+							</a>
+							<div class="news_date">28 may, 2014</div>
+							<div class="news_text_wrapper">Today Insilico Medicine, Inc., a Deep Knowledge Ventures' portfolio company based in Baltimore, that is using advances in genomics to discover new therapies to target aging and age-related diseases.
+							</div>
+						</div>
+					</div>
+					<div class='oneMonth'>
+						<div class='oneArticle'>
+							<img src="res/prweb.gif" alt="PRweb" height="50">
+							<a href="http://www.prweb.com/releases/2014/05/prweb11870386.htm" target="_blank">
+							<div class="news_title">Live Long &amp; Prosper? A New Report Highlights Economic &amp; Health Benefits of A Growing Regenerative Medicine Sector</div>
+							</a>
+							<div class="news_date">22 may, 2014</div>
+							<div class="news_text_wrapper">Aging Analytics &amp; The London Regenerative Medicine Network have co-published ‘Investing in Regenerative Medicine.
+							</div>
+						</div>
+					</div>
+					<div class='oneMonth'>
+						<div class='oneArticle'>
+							<img src="res/prweb.gif" alt="PRweb" height="50">
+							<a href="http://www.prweb.com/releases/2014/05/prweb11847458.htm" target="_blank">
+							<div class="news_title">Deep Knowledge Venture’s Appoints Intelligent Investment Analysis Software VITAL</div>
+							</a>
+							<div class="news_date">13 may, 2014</div>
+							<div class="news_text_wrapper">DKV has appointed VITAL, a machine learning program capable of making investment recommendations to its board.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class='lr layer3'>
+					<div class='oneMonth'>
+						<div class='oneArticle'>
+							<img src="res/prweb.gif" alt="PRweb" height="50">
+							<a href="http://www.prweb.com/releases/2014/04/prweb11762081.htm" target="_blank">
+							<div class="news_title">Deep Knowledge Ventures Finances Life-Extension Start-up, Personalized Medicine Service</div>
+							</a>
+							<div class="news_date">15 april, 2014</div>
+							<div class="news_text_wrapper">Deep Knowledge Ventures has announced seed investments into Pathway Pharmaceuticals in Hong Kong.
+							</div>
+						</div>
+					</div>
+					<div class='oneMonth'>
+						<div class='oneArticle'>
+							<img src="res/prweb.gif" alt="PRweb" height="50">
+							<a href="http://www.prweb.com/releases/2014/04/prweb11743313.htm" target="_blank">
+							<div class="news_title">Top Cancer Genomics Expert Joins New Lifespan Extension Start-up as COO</div>
+							</a>
+							<div class="news_date">9 april, 2014</div>
+							<div class="news_text_wrapper">Today Insilico Medicine, Inc., a Baltimore-based company using advances in genomics to discover new therapies to target aging and age-related diseases.
+							</div>
+						</div>
+					</div>
+					<div class='oneMonth'>
+						<div class='oneArticle'>
+				            <img src="res/prweb.gif" alt="PRweb" height="50">
+				            <a href="http://www.prweb.com/releases/2014/04/prweb11729350.htm" target="_blank">
+				            <div class="news_title">Pathway Pharmaceuticals to launch Personalised Cancer Treatment Service with OncoFINDER™ tool</div>
+				            </a>
+				            <div class="news_date">3 april, 2014</div>
+				            <div class="news_text_wrapper">Pathway Pharmaceuticals announced today that it is to launch a Personalized Cancer Treatment Service to enable medical professionals to predict the efficacy of therapies for individual cancer patients.
+				            </div>						
+						</div>
+					</div>
+				</div>
+				<div class='lr layer4'>
+					<div class='oneMonth'>
+						<div class='oneArticle'>
+							<img src="res/prnewswire.gif" alt="PR News Wire" height="80">
+							<a href="http://www.prnewswire.co.uk/news-releases/the-biogerontology-research-foundation-announces-the-appointment-of-dmitry-kaminskiy-to-the-board-of-trustees-253322411.html" target="_blank">
+							<div class="news_title">THE APPOINTMENT OF DMITRY KAMINSKIY TO THE BOARD OF TRUSTEES ANNOUNCED</div>
+							</a>
+							<div class="news_date">01 april, 2014</div>
+							<div class="news_text_wrapper">The Biogerontology Research Foundation announces the appointment of Dmitry Kaminskiy to the board of trustees.
+							</div>
+						</div>
+					</div>
+					<div class='oneMonth'>
+						<div class='oneArticle'>
+							<img src="res/prweb.gif" alt="PRweb" height="50">
+							<a href="http://www.prweb.com/releases/2014/03/prweb11644588.htm" target="_blank">
+							<div class="news_title">IN SILICO MEDICINE INC. LAUNCHES IN THE US TO USE ADVANCES IN TECHNOLOGY TO COMBAT AGING AND AGE-RELATED DISEASES</div>
+							</a>
+							<div class="news_date">06 march, 2014</div>
+							<div class="news_text_wrapper">In Silico Medicine Inc, developing novel computer-assisted methods for drug discovery in aging research, has officially launched in the US.
+							</div>
+						</div>
+					</div>
+					<div class='oneMonth'>
+						<div class='oneArticle free'>
+
+						</div>
+					</div>
+				</div>
+				<div class='nb'>
+					<div id='up' class='btn up'></div>
+					<div id='down' class='btn dwn'></div>
+				</div>
+		</div>
+	</div>
+	<div class='cont' id='cPress'>
+		<div class='mcont'>
+				<div class='lr2 lyer1'>
+					<div class='oneMonth'>
+						<div class='oneArticle'>
+							<img src="res/TheEconomicTimes.png" alt="TheEconomicTimes news" height="26" style="margin-bottom:10px;">
+							<a href="http://economictimes.indiatimes.com/opinion/comments-analysis/a-vital-lesson-for-indian-boards/articleshow/44733315.cms" target="_blank">
+							<div class="news_title">A VITAL lesson for Indian boards</div>
+							</a>
+							<div class="news_date">9 oct, 2014</div>
+							<div class="news_text_wrapper">In a global first, Deep Knowledge Ventures, has appointed VITAL (Validating Investment Tool for Advancing Life Sciences), a machine learning tool, to its exiting five-member board. What lessons does this hold for Indian boards?
+							</div>
+						</div>
+					</div>
+					<div class='oneMonth'>
+						<div class='oneArticle'>
+							<img src="res/bbc.png" alt="BBC news" height="36">
+							<a href="http://www.bbc.com/news/business-29456257" target="_blank">
+							<div class="news_title">Could a big data-crunching machine be your boss one day?</div>
+							</a>
+							<div class="news_date">8 oct, 2014</div>
+							<div class="news_text_wrapper">Data analytics will certainly have a bigger part to play in quantifying employees' performance and assessing their strengths and weaknesses, experts believe. Even psychometric testing can be automated.
+							</div>
+						</div>
+					</div>
+					<div class='oneMonth'>
+						<div class='oneArticle'>
+							<img src="res/cnn.png" alt="CNN news" height="36">
+							<a href="http://edition.cnn.com/2014/09/30/business/computers-ceo-boardroom-robot-boss/" target="_blank">
+							<div class="news_title">Could computers take over the boardroom?</div>
+							</a>
+							<div class="news_date">01 oct, 2014</div>
+							<div class="news_text_wrapper">It's a common saying that one day all our jobs will be done by robots. A Hong Kong venture capital fund recently appointed a computer algorithm to its board of directors, claiming to be the first company of its kind to give a machine an "equal vote" when it comes to investment decisions.</div>					
+						</div>
+					</div>
+				</div>
+				<div class='lr2 lyer2'>
+					<div class='oneMonth'>
+						<div class='oneArticle'>
+				            <img src="res/newscientist.gif" alt="New scientist news" height="36">
+				            <a href="http://www.newscientist.com/article/mg22429894.000-everyday-drugs-could-give-extra-years-of-life.html" target="_blank">
+				            <div class="news_title">Everyday drugs could give extra years of life</div>
+				            </a>
+				            <div class="news_date">01 oct, 2014</div>
+				            <div class="news_text_wrapper">Millions of people are taking anti-ageing drugs every day – they just don't know it. Drugs to slow ageing sound futuristic but they already exist in the form of relatively cheap medicines.
+				            </div>
+						</div>
+					</div>
+					<div class='oneMonth'>
+						<div class='oneArticle'>
+							<img src="res/chinapost.png" alt="South China Post news" height="26" style="margin-bottom:10px;">
+							<a href="http://www.scmp.com/lifestyle/technology/article/1596854/home-work-and-play-robots-are-coming" target="_blank">
+							<div class="news_title">At home, work and play, the robots are coming</div>
+							</a>
+							<div class="news_date">21 sep, 2014</div>
+							<div class="news_text_wrapper">In May, Hong Kong became the base for Hanson Robotics, a company founded in the United States with the aim of developing bio-inspired technology.</div>
+						</div>
+					</div>
+					<div class='oneMonth'>
+						<div class='oneArticle'>
+							<img src="res/TheEconomist.jpg" alt="TheEconomist news" height="36">
+							<a href="http://www.economist.com/news/business/21615586-three-issues-should-preoccupy-managers-next-50-years-over-horizon" target="_blank">
+							<div class="news_title">Three issues that should preoccupy managers in the next 50 years</div>
+							</a>
+							<div class="news_date">06 sep, 2014</div>
+							<div class="news_text_wrapper">For most people a 50th anniversary is an excuse for a party. For the men and women of McKinsey it is an excuse for a conference.</div>
+						</div>
+					</div>
+				</div>
+				<div class='lr2 lyer3'>
+					<div class='oneMonth'>
+						<div class='oneArticle'>
+							<img src="res/fortune.gif" alt="Fortune news" height="26" style="margin-bottom:10px;">
+							<a href="http://fortune.com/2014/08/01/data-startup-founders-bloomberg-mattermark" target="_blank">
+							<div class="news_title">Can you find founders before they know they are founders?</div>
+							</a>
+							<div class="news_date">01 aug, 2014</div>
+							<div class="news_text_wrapper">One way to get around that is to invest even earlier. Invest before the company is a company.
+							</div>
+						</div>
+					</div>
+					<div class='oneMonth'>
+						<div class='oneArticle'>
+							<img src="res/forbes.png" alt="Forbes news" height="36">
+							<a href="http://www.forbes.com/sites/sap/2014/05/21/this-does-not-compute-the-human-skills-robots-cant-replace-and-how-to-develop-them/" target="_blank">
+							<div class="news_title">This Does Not Compute: The Human Skills Robots Can't Replace And How To Develop Them</div>
+							</a>
+							<div class="news_date">21 may, 2014</div>
+							<div class="news_text_wrapper">Futurists predict we’re facing workplace changes as large as those of the Industrial Revolution, with  rampant automation expected. But some skills aren’t good candidates for automation.
+							</div>
+						</div>
+					</div>
+					<div class='oneMonth'>
+						<div class='oneArticle'>
+				            <img src="res/bbc.png" alt="BBC news" height="36">
+				            <a href="http://www.bbc.com/news/technology-27426942" target="_blank">
+				            <div class="news_title">A venture capital firm has appointed a computer algorithm to its board of directors</div>
+				            </a>
+				            <div class="news_date">16 may, 2014</div>
+				            <div class="news_text_wrapper">A venture capital firm has appointed a computer algorithm to its board of directors. The program - called Vital - will vote on whether to invest in a specific company or not.
+				            </div>						
+						</div>
+					</div>
+				</div>
+				<div class='lr2 lyer4'>
+					<div class='oneMonth'>
+						<div class='oneArticle'>
+							<img src="res/huff.png" alt="Huffington Post news" height="36">
+							<a href="http://www.huffingtonpost.co.uk/2014/05/15/artificial-intelligence-board-directors_n_5329370.html" target="_blank">
+							<div class="news_title">VENTURE CAPITAL FIRM HIRES ARTIFICIAL INTELLIGENCE TO ITS BOARD OF DIRECTORS</div>
+							</a>
+							<div class="news_date">15 may, 2014</div>
+							<div class="news_text_wrapper">Deep Knowledge Ventures said that the AI would help make financial and business decisions, help lead its research into biotechnology and regenerative medicine, and would act as an "equal member of the board".
+							</div>
+						</div>
+					</div>
+					<div class='oneMonth'>
+						<div class='oneArticle'>
+							<img src="res/businessinsider.png" alt="" height="36">
+							<a href="http://www.businessinsider.com/vital-named-to-board-2014-5" target="_blank">
+							<div class="news_title">A VENTURE CAPITAL FIRM JUST NAMED AN ALGORITHM TO ITS BOARD OF DIRECTORS</div>
+							</a>
+							<div class="news_date">13 may, 2014</div>
+							<div class="news_text_wrapper">The program, called VITAL, can make investment recommendations about life sciences firms by poring over large amounts of data.
+							</div>
+						</div>
+					</div>
+					<div class='oneMonth'>
+						<div class='oneArticle'>
+							<img src="res/betabeat.png" alt="" height="36">
+							<a href="http://betabeat.com/2014/05/v-c-firm-names-robot-to-board-of-directors" target="_blank">
+							<div class="news_title">V.C. FIRM NAMES ROBOT TO BOARD OF DIRECTORS</div>
+							</a>
+							<div class="news_date">13 may, 2014</div>
+							<div class="news_text_wrapper">In case you needed more proof that all our jobs will one day be occupied by robots, a Hong Kong V.C. firm has just named an artificial intelligence tool to its board of directors.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class='lr2 lyer5'>
+					<div class='oneMonth'>
+						<div class='oneArticle'>
+							<img src="res/marketwatch.jpg" alt="MarketWatch Wall Street Journal" height="52">
+							<a href="http://www.marketwatch.com/story/deep-knowledge-ventures-finances-life-extension-start-up-personalized-medicine-service-2014-04-15" target="_blank">
+							<div class="news_title">DEEP KNOWLEDGE VENTURES FINANCES LIFE-EXTENSION START-UP, PERSONALIZED MEDICINE SERVICE</div>
+							</a>
+							<div class="news_date">15 april, 2014</div>
+							<div class="news_text_wrapper">Deep Knowledge Ventures has announced seed investments into Pathway Pharmaceuticals in Hong Kong and InSilico Medicine, Inc in Baltimore, Maryland.
+							</div>
+						</div>
+					</div>
+					<div class='oneMonth'>
+						<div class='oneArticle'>
+							<img src="res/marketwatch.jpg" alt="MarketWatch Wall Street Journal" height="52">
+							<a href="http://www.marketwatch.com/story/top-cancer-genomics-expert-joins-new-lifespan-extension-start-up-as-coo-2014-04-09" target="_blank">
+							<div class="news_title">TOP CANCER GENOMICS EXPERT JOINS NEW LIFESPAN EXTENSION START-UP AS COO</div>
+							</a>
+							<div class="news_date">09 april, 2014</div>
+							<div class="news_text_wrapper">Today Insilico Medicine, Inc. announced the appointment of cancer genomics expert Dr. Qingsong Zhu to the position of Chief Operating Officer (COO).
+							</div>
+						</div>
+					</div>
+					<div class='oneMonth'>
+						<div class='oneArticle'>
+							<img src="res/fightaging.jpg" alt="FightAging" height="32">
+							<a href="https://www.fightaging.org/archives/2014/03/in-silico-medicine-launches.php" target="_blank">
+							<div class="news_title">IN SILICO MEDICINE LAUNCHES</div>
+							</a>
+							<div class="news_date">06 march, 2014</div>
+							<div class="news_text_wrapper">No doubt the announcement was pushed forward to benefit from publicity associated with the recent launch of Human Longevity, as both groups are in the same business...
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class='nb'>
+					<div id='up2' class='btn up'></div>
+					<div id='down2' class='btn dwn'></div>
+				</div>
+		</div>
+	</div>
+	<div class='cont' id='cInfo'>
+		<div class='conta' id='p1Cont'><img id='play' class='play resizeable' src='img/play.png'><br><img class='txt resizeable' src='img/wedo.png'></div>
+		<div class='conta' id='p2Cont'><img src='img/principles.png'></div>
+		<div class='conta' id='p3Cont'><img src='img/specialization.png'></div>
+		<div class='conta' id='p4Cont'><img src='img/mission.png'></div>
+		<div class='conta' id='p5Cont'><img src='img/goals.png'></div>
+		<div class='st2'>
+			<img class='close' src='img/close.png'><br>
+			<div class='cont730'>
+				<video id="example_video_1" class="video-js vjs-default-skin" controls preload="auto" width="730" height="410" poster="img/pre.jpg" data-setup='{"example_option":true}'><source src="dkv.mp4" type='video/mp4' />
+				 <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+				</video>
+			</div>
+		</div>
+	</div>
+	<div class='cont' id='cProjects'>
+		<a href='#c1'><img src='img/logo1.png'></a>
+			<a href='#x' class='overlay' id='c1'></a>
+			<div class='popup'>
+				<a class='cls' title='Close' href='#close'></a>
+					<section id='c1'>
+						<div class='cont960'>
+							<img src='img/logo1.png'>
+							<div class='nd2'>
+								The real brain behind our fund is a company called CyberFuture, which occupies the space where Big Data and AI meet, developing robotic BigData analytical investment systems. The company’s flagship project is called VITAL (Validating Investment Tool for Advancing Life Sciences), deals with forecasting and investment analysis in the biotechnology industry. And while at the current stage VITAL is being used as an in-house analytical system, it has already begun this year to function as a global platform for a variety of external users within the biotech space, including scientists, students, professionals and others.  
+							</div>
+						</div>
+					</section>
+			</div>
+		<a href='#c2'><img src='img/logo2.png'></a>
+			<a href='#x' class='overlay' id='c2'></a>
+			<div class='popup'>
+				<a class='cls' title='Close' href='#close'></a>
+					<section id='c2'>
+						<div class='cont960'>
+							<img src='img/logo2.png'>
+							<div class='nd2'>
+								HyperPostWeb is a company engaged in the development and implementation of advanced smart IT-platforms and mobile applications. Many of its unique designs have been used successfully in DKV portfolio companies – the first being BeSmart, a system for managing and administering complex distributed projects. 
+							</div>
+						</div>
+					</section>
+			</div>
+		<a href='#c3'><img src='img/logo3.png'></a><br>
+			<a href='#x' class='overlay' id='c3'></a>
+			<div class='popup'>
+				<a class='cls' title='Close' href='#close'></a>
+					<section id='c3'>
+						<div class='cont960'>
+							<img src='img/logo3.png'>
+							<div class='nd2'>
+								EXPONENTIAL TECHNOLOGIES INSTITUTE is 
+								an international institute of exponential 
+								technologies focusing on applied research of 
+								related opportunities and risks. 
+								Exponential technologies are developed by an exponential growth curve and 
+								lead to a radical transformation of the world order in the future. 
+								The uniqueness of EXPTECH is based on balanced valuation 
+								of potential risks and prevention of negative consequences of 
+								exponential technologies development. 
+							</div>
+							<a target='_blank' href='http://exptech.org' class='lnk'>VISIT SITE</a>
+						</div>
+					</section>
+			</div>
+		<a href='#c4'><img src='img/logo4.png'></a>
+			<a href='#x' class='overlay' id='c4'></a>
+			<div class='popup'>
+				<a class='cls' title='Close' href='#close'></a>
+					<section id='c4'>
+						<div class='cont960'>
+							<img src='img/logo4.png'>
+							<div class='nd2'>
+								TRANSPLANETERY a Silicon Valley based space development company on a mission to make the global space sector more investible and to seed new in-space markets. The company is currently developing an AI-powered web intelligence platform that will give space investors, commercial space community and space enthusiasts a real-time insight into the global space ecosystem as it stands today and its projected trajectory until 2112.
+							</div>
+							<a target='_blank' href='http://www.transplanetary.com' class='lnk'>VISIT SITE</a>
+						</div>
+					</section>
+			</div>
+		<a href='#c5'><img src='img/logo5.png'></a>
+			<a href='#x' class='overlay' id='c5'></a>
+			<div class='popup'>
+				<a class='cls' title='Close' href='#close'></a>
+					<section id='5'>
+						<div class='cont960'>
+							<img src='img/logo5.png'>
+							<div class='nd2'>
+								VITAL – Validating Investment Tool for Advancing Life Sciences. Expert system for the biotechnology industry. At the moment the most powerful robotized expert system in the biotechnology industry. VITAL opens new horizons in investment and business development for entrepreneurs.  It will give traditional investors access to innovative biotechnology projects at minimal risk, and innovation investors will be able to count themselves among satisfied investors in highly profitable projects.
+							</div>
+						</div>
+					</section>
+			</div>
+		<a href='#c6'><img src='img/logo6.png'></a><br>
+			<a href='#x' class='overlay' id='c6'></a>
+			<div class='popup'>
+				<a class='cls' title='Close' href='#close'></a>
+					<section id='c6'>
+						<div class='cont960'>
+							<img src='img/logo6.png'>
+							<div class='nd2'>
+								Pathway Pharmaceuticals – is an innovative company from Hong Kong, specializing in the field of personalized medicine and cancer treatment. Via their product, OncoFinder, Pathway Pharmaceuticals made serious progress in the field of personalized anti-cancer therapy based on a unique algorithm for gene expression analysis.
+							</div>
+							<a target='_blank' href='http://pathwaypharmaceuticals.com' class='lnk'>VISIT SITE</a>
+						</div>
+					</section>
+			</div>
+		<a href='#c7'><img src='img/logo7.png'></a>
+			<a href='#x' class='overlay' id='c7'></a>
+			<div class='popup'>
+				<a class='cls' title='Close' href='#close'></a>
+					<section id='c7'>
+						<div class='cont960'>
+							<img src='img/logo7.png'>
+							<div class='nd2'>
+								Insilico Medicine Inc. is high-tech company with a wide scope of interests in the field of antiaging and personalized medicine.
+								Insilico Medicine Inc. is developing its own unique product – GeroScope, software package that allows to select optimal geroprotectors for 
+								particular patient.
+							</div>
+							<a target='_blank' href='http://insilicomedicine.com' class='lnk'>VISIT SITE</a>
+						</div>
+					</section>
+			</div>
+		<a href='#c8'><img src='img/logo8.png'></a>
+			<a href='#x' class='overlay' id='c8'></a>
+			<div class='popup'>
+				<a class='cls' title='Close' href='#close'></a>
+					<section id='c8'>
+						<div class='cont960'>
+							<img src='img/logo8.png'>
+							<div class='nd2'>
+								Biogerontology Research Foundation has the great story, established almost 10 years ago this fund could unite a huge number of active people from different areas who are not indifferent in scientific and social questions of aging. Foundation constantly makes open educational forums and supports the publication of scientific articles. 
+							</div>
+							<a target='_blank' href='http://www.bg-rf.org.uk' class='lnk'>VISIT SITE</a>
+						</div>
+					</section>
+			</div>
+		<a href='#c9'><img src='img/logo9.png'></a>
+			<a href='#x' class='overlay' id='c9'></a>
+			<div class='popup'>
+				<a class='cls' title='Close' href='#close'></a>
+					<section id='c9'>
+						<div class='cont960'>
+							<img src='img/logo9.png'>
+							<div class='nd2'>
+								Advanced Biotechnology Acceleration Foundation is non-state Fond, specialized on supporting of developing research projects of anti-aging, biomedical technologies using advanced computer methods of data processing. One of the most important tasks of the Foundation is to promote scientific data trends among students of leading Russian Universities and open educational lectures for the general public.
+							</div>
+							<a target='_blank' href='http://biotechfund.ru' class='lnk'>VISIT SITE</a>
+						</div>
+					</section>
+			</div>
+	</div>
+	<div class='cont' id='cTeam'>
+		<img src='img/cTeam.png'>
+		<div class='tc'>
+			<div class='mc'>
+				<img class='ava' src='img/ava1.png'>
+				<img class='name' src='img/name1.png'>
+				<img class='mask' src='img/mask1.png'>
+				<a class='al' href='#kaminskiy'></a>
+			</div>
+			<div class='mc'>
+				<img class='ava' src='img/ava2.png'>
+				<img class='name' src='img/name2.png'>
+				<img class='mask' src='img/mask2.png'>
+			</div>
+			<div class='mc'>
+				<img class='ava' src='img/ava3.png'>
+				<img class='name' src='img/name3.png'>
+				<img class='mask' src='img/mask3.png'>
+			</div>
+			<div class='mc'>
+				<img class='ava' src='img/ava4.png'>
+				<img class='name' src='img/name4.png'>
+				<img class='mask' src='img/mask4.png'>
+			</div>
+			<a href='#x' class='overlay' id='kaminskiy'></a>
+			<div class='popup'>
+				<a class='cls' title='Close' href='#close'></a>
+					<section id='kaminskiy'>
+						<div class='cont9602'>
+							<img class='fll' src='img/avarm.png'><br>
+
+									Mr Kaminskiy is the Senior Partner of Deep
+									Knowledge Ventures (DKV), a venture capital
+									firm in Hong Kong specializing in seed and
+									early stage financing of companies
+									advancing research in age-related diseases
+									and regenerative medicine. DKV was one of
+									the first venture capital firms to apply big data
+									analytics and machine learning to the
+									biomedical grant, publication, patent and
+									company database as a means to informing
+									its investments.
+									Dmitry Kaminskiy is known for his experience
+									in information technology and finance. He
+									began Deep Knowledge Venture out of a
+									desire to apply his knowledge of finance and
+									computer science to the challenge of creating
+									value in the life science sector. Working
+									together with world's leading scientists Mr
+									Kaminskiy is not only investing in biomedical
+									start-ups and already existing companies, but
+									actively investigating this field of knowledge.
+									Before joining Deep Knowledge Ventures, Dmitry Kaminskiy co-founded and helped
+									finance the Center for Biogerontology and Regenerative Medicine (CBRM) in Russia,
+									which employs over 40 full-time and part-time scientists and medical doctors including
+									many young scientists from the Moscow Institute of Physics and Technology and the
+									First Open Institute for Regenerative Medicine for Young Scientists. The CBRM
+									engages in market analytics, publishes industry reports and supports both
+									bioinformatics and laboratory research.
+									He has also helped support a similar initiative in the United Kingdom by becoming a
+									trustee of the UK's Biogerontology Research Foundation (BGRF). The BGRF was
+									founded in 2007 to support ageing research, address the challenges of a rapidly ageing
+									population, ameliorate the suffering of the elderly and to reduce the impact of disease
+									on future generations. Under Dmitry's guidance the charity now intends to expand its
+									educational and outreach initiatives by developing and supporting online and mobile
+									resources dedicated to research, training and education in ageing and age-related
+									diseases.
+						</div>
+					</section>
+			</div>
+		</div>
+	</div>
+	<div class='cont' id='cContacts'>
+		<div class='header'>Contact us</div>
+		<div class='contF'>
+			<form action="mail.php" method="post" id='mail'>
+				<input class="input" placeholder="Your name" type="text" name="name" required>
+				<input class="input" placeholder="E-mail" type="text" name="mail" required>
+				<div class='m10'>
+					<textarea id='mydt'class="input2" placeholder="Your message" type="text" name="msg" required></textarea>
+					<input id='myInput' class="button-1" type="submit" name="subv" value="SEND">
+				</div>
+			</form>
+		</div>
+		<div class='contL'>
+			<a class='send' href='mailto:info@deepknowledgeventures.com'>info@deepknowledgeventures.com</a>
+			<div class='teln'>+ 852 5801-44-06  /  + 44 (0) 2037-693-282</div>
+
+			<div class='adr'><br>2702-3, Bank Of East Asia Harbour View Centre, 56 Gloucester Rd, Wan Chai, Hong Kong</div>
+		</div>
+	</div>
+</div>
+<div id='logo'><img src='img/logo.png'></div>
+<footer>
+	<a class="sel bm navi" id="home"><div id="home2" class='yellow'></div><span class='bmt'>Home</span></a>
+	<!--<div class="item" style="background-image:url('img/icon.png')">
+		<div class="block">
+			<div class="border left"></div>
+			<div class="border top"></div>
+			<div class="border right"></div>
+			<div class="border bottom"></div>
+		</div>
+	</div>-->
+	<a class="bm navi" id="info"><div id="info2" class='yellow'></div><span class='bmt'>About us</span></a>
+	<a class="bm navi" id="projects"><div id="projects2" class='yellow'></div><span class='bmt'>Projects</span></a>
+	<a class="bm navi" id="team"><div id="team2" class='yellow'></div><span class='bmt'>Team</span></a>
+	<a class="bm navi" id="news"><div id="news2" class='yellow'></div><span class='bmt'>News</span></a>
+	<a class="bm navi" id="press"><div id="press2" class='yellow'></div><span class='bmt'>Press</span></a>
+	<a class="bm navi" id="contacts"><div id="contacts2" class='yellow'></div><span class='bmt'>Contacts</span></a>
+</footer>
+<div class='deflector'>
+	<div class='loadmsg'>BG LOADING...</div>
+</div>
+</div>
+</body>
+<script src='virus2.js'></script>
+</html>
