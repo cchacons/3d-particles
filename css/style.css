@@ -116,6 +116,9 @@ table {
 .EDGE-19768280, .EDGE-19768280 {
   margin: -60px auto 0;
 }
+#stats {
+  z-index: 100500;
+}
 html, body {
   min-height: 760px;
   overflow: hidden;
