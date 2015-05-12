@@ -291,7 +291,6 @@ requestAnimationFrame( update );
 						//mesh2.scale.x = mesh2.scale.y = mesh2.scale.z = 2;
 						scene.add(mesh2);
 						assetsLoadedCount = 1;
-						console.log('loaded!!!',assetsLoadedCount);
 				    }
 
 				});
