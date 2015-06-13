@@ -7,8 +7,8 @@ renderer.setSize( window.innerWidth, window.innerHeight );
 document.body.appendChild( renderer.domElement );
 
 var container, stats;
-var camera, scene, renderer, particles, geometry0, geometry, geometry2, i, h, color, sprite, size;
-var tmp_geometry0, tmp_geometry, tmp_geometry2;
+var camera, scene, renderer, particles, geometry0, geometry, geometry2, geometry3, geometry4, geometry5, i, h, color, sprite, size;
+var tmp_geometry0, tmp_geometry, tmp_geometry2, tmp_geometry3, tmp_geometry4, tmp_geometry5;
 var mouseX = 0, mouseY = 0;
 var p = [];
 var h;
@@ -207,6 +207,7 @@ requestAnimationFrame( update );
 
 	var pmesh = new THREE.PointCloud( tmp_geometry0, material );
 	scene.add(pmesh);
+	assetsLoadedCount++;
 
 	var pgeom2 = new THREE.SphereGeometry (60,30,30);
 	var pmesh2 = new THREE.PointCloud( pgeom2, material );
@@ -248,8 +249,9 @@ requestAnimationFrame( update );
 						}
 
 						mesh1 = new THREE.PointCloud( tmp_geometry, material );
-						//mesh1 = new THREE.PointCloud( tmp_geometry, material );
+						mesh1.frustumCulled = false;
 						scene.add(mesh1);
+						assetsLoadedCount++;
 				    }
 
 				});
@@ -288,9 +290,134 @@ requestAnimationFrame( update );
 						}
 
 						mesh2 = new THREE.PointCloud( tmp_geometry2, material );
-						//mesh2.scale.x = mesh2.scale.y = mesh2.scale.z = 2;
+						mesh2.frustumCulled = false;
 						scene.add(mesh2);
-						assetsLoadedCount = 1;
+						assetsLoadedCount++;
+
+				    }
+
+				});
+
+			});
+
+			loader.load('obj/sphere.obj', function(object3d){
+
+				object3d.traverse( function ( child ) {
+
+				    if ( child.geometry !== undefined ) {
+
+						var geom = child.geometry;
+						var vertices = geom.vertices;
+						var vl = vertices.length;
+						geometry3 = new THREE.Geometry();
+						tmp_geometry3 = new THREE.Geometry();
+
+						for ( i = 0; i < vl; i ++ ) {
+
+							var vertex = new THREE.Vector3();
+							vertex.x = vertices[i].x;
+							vertex.y = vertices[i].y;
+							vertex.z = vertices[i].z;
+
+							var tmp_vertex = new THREE.Vector3();
+							tmp_vertex.x = vertices[i].x;
+							tmp_vertex.y = ground;
+							tmp_vertex.z = vertices[i].z;
+
+							geometry3.vertices.push( vertex );
+							tmp_geometry3.vertices.push( tmp_vertex );
+
+						}
+
+						mesh3 = new THREE.PointCloud( tmp_geometry3, material );
+						mesh3.frustumCulled = false;
+						scene.add(mesh3);
+						assetsLoadedCount++;
+
+				    }
+
+				});
+
+			});
+
+
+			loader.load('obj/snow_terrain2.obj', function(object3d){
+
+				object3d.traverse( function ( child ) {
+
+				    if ( child.geometry !== undefined ) {
+
+						var geom = child.geometry;
+						var vertices = geom.vertices;
+						var vl = vertices.length;
+						geometry4 = new THREE.Geometry();
+						tmp_geometry4 = new THREE.Geometry();
+
+						for ( i = 0; i < vl; i ++ ) {
+
+							var vertex = new THREE.Vector3();
+							vertex.x = vertices[i].x;
+							vertex.y = vertices[i].y;
+							vertex.z = vertices[i].z;
+
+							var tmp_vertex = new THREE.Vector3();
+							tmp_vertex.x = vertices[i].x;
+							tmp_vertex.y = ground;
+							tmp_vertex.z = vertices[i].z;
+
+							geometry4.vertices.push( vertex );
+							tmp_geometry4.vertices.push( tmp_vertex );
+
+						}
+
+						mesh4 = new THREE.PointCloud( tmp_geometry4, material );
+						mesh4.frustumCulled = false;
+						assetsLoadedCount++;
+						console.log(assetsLoadedCount);
+						scene.add(mesh4);
+						console.log(tmp_geometry4);
+				    }
+
+				});
+
+			});
+
+
+			loader.load('obj/SnowTerrain_2.obj', function(object3d){
+
+				object3d.traverse( function ( child ) {
+
+				    if ( child.geometry !== undefined ) {
+
+						var geom = child.geometry;
+						var vertices = geom.vertices;
+						var vl = vertices.length;
+						geometry5 = new THREE.Geometry();
+						tmp_geometry5 = new THREE.Geometry();
+
+						for ( i = 0; i < vl; i ++ ) {
+
+							var vertex = new THREE.Vector3();
+							vertex.x = vertices[i].x;
+							vertex.y = vertices[i].y;
+							vertex.z = vertices[i].z;
+
+							var tmp_vertex = new THREE.Vector3();
+							tmp_vertex.x = vertices[i].x;
+							tmp_vertex.y = ground;
+							tmp_vertex.z = vertices[i].z;
+
+							geometry5.vertices.push( vertex );
+							tmp_geometry5.vertices.push( tmp_vertex );
+
+						}
+
+						mesh5 = new THREE.PointCloud( tmp_geometry5, material );
+						mesh5.frustumCulled = false;
+						assetsLoadedCount++;
+						console.log(assetsLoadedCount);
+						scene.add(mesh5);
+						console.log(tmp_geometry5);
 				    }
 
 				});
@@ -356,17 +483,19 @@ requestAnimationFrame( update );
 	});
 
 	$('#projects').click(function() {
-		curr = pmesh;
-		currGeom = pgeom;
+		curr = mesh3;
+		currGeom = geometry3;
 
 	});
 
 	$('#team').click(function() {
-		//tmp = Objects[2];
+		curr = mesh4;
+		currGeom = geometry4;
 	});
 
 	$('#news').click(function() {
-		//tmp = Objects[3];
+		curr = mesh5;
+		currGeom = geometry5;
 	});
 
 
@@ -386,14 +515,17 @@ requestAnimationFrame( update );
 
 	requestAnimationFrame( animate );
 
+						console.log(assetsLoadedCount);
 
-	if (assetsLoadedCount != 1) {
+
+
+	if (assetsLoadedCount != 6) {
 		dest = pmesh3;
 		others = pmesh2;
 		curr = pmesh;
 		currGeom = pgeom;
 	} else {
-		if ((assetsLoadedCount = 1) && (flag != 1)) {
+		if ((assetsLoadedCount == 6) && (flag != 1)) {
 			$('.deflector').css('opacity','0');
 			dest = pmesh;
 			others = pmesh2;
